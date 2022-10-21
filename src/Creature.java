@@ -57,10 +57,10 @@ public class Creature {
     }
 
     public void increaseStats(int atk, int def, int maxHp, int maxMp){
-        increaseATK(atk);
-        increaseDEF(def);
-        increaseHP(maxHp);
-        increaseMP(maxMp);
+        setATK(increaseATK(atk));
+        setDEF(increaseDEF(def));
+        setMaxHP(increaseHP(maxHp));
+        setMaxMP(increaseMP(maxMp));
     }
 
     public void increaseLevel(int atk, int def, int maxHp, int maxMp){
@@ -69,4 +69,5 @@ public class Creature {
         setHP(getMaxHP());
         setMP(getMaxMP());
     }
+
 }
